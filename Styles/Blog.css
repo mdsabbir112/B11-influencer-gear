@@ -27,6 +27,13 @@
     align-items: center;
     margin-bottom: 2.8rem;
 }
+/* These are not for dextop these are for mobile responsive  */
+.menu-icon{
+    display: none;
+}
+.shopping-cart{
+        display: none;
+    }
 .nav-title{
     font-size: 1.6rem;
     font-weight: 700;
@@ -237,7 +244,7 @@ hr{
     font-weight: 700;
     /* line-height: 3.7rem; */
     color: #0A0826;
-    margin-bottom: 1rem;
+    margin-top: 0rem;
 }
 .feature-des{
     width: 80%;
@@ -246,6 +253,7 @@ hr{
     line-height: 1.7rem;
     color: #6c6c6c;
     margin-top: 0px;
+    margin-top: 0rem;
     margin-bottom: 1rem;
 }
 .feature-content button{
@@ -295,7 +303,24 @@ hr{
 @media screen and (max-width: 576px) {
     /* navigation bar  */
     .nav-main-lists{
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        display: none;
+    }
+    .navigation{
+        justify-content: space-around;
+    }
+    .shopping-cart{
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-title{
+        font-size: 1rem;
+        font-weight: 700;
     }
 
     /* hero section */
@@ -316,6 +341,7 @@ hr{
     .card-container{
         max-width: 100%;
         margin: 0 auto;
+        border: none;
         
     }
     .btn-seemore{
